@@ -1,0 +1,96 @@
+/* Inclure le rembourrage et la bordure dans la largeur et la hauteur totales d'un élément */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Supprimer les marges et le remplissage de la liste*/
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Stylise les éléments de la liste */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+  
+    /* rendre les éléments de la liste non sélectionnables */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Définissez tous les éléments de la liste impaire sur une couleur différente*/
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Couleur de fond plus sombre en vol stationnaire*/
+  ul li:hover {
+    background: rgb(132, 214, 111);
+  }
+  
+
+  
+  
+  /* Styliser le bouton de fermeture */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Stylise le header */
+  .header {
+    background-color: #546dfd;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Pour mettre les éléments de la liste plus bas*/
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style de l'entrée */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style du bouton "Ajouter" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
